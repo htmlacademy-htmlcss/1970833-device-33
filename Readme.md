@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Андрей Луцевич](https://up.htmlacademy.ru/htmlcss/33/user/1970833).
-* Наставник: `Неизвестно`.
+* Наставник: [Ирина Малиновская] (https://htmlacademy.ru/profile/irina-malinovskaya).
 
 ---
 
