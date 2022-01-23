@@ -11,7 +11,7 @@
         <ul class="navigation-user">
           <li class="navigation-user-item">
             <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-              <input type="text" placeholder="Текст поиска" type="text">
+              <input type="text" placeholder="Текст поиска">
               <button class="subscribe-button" type="submit">Найти</button>
             </form>
             <a class="visually-hidden" href="#">Поиск</a>
@@ -87,8 +87,16 @@
             <button class="slider-pagination-button slider-pagination-current" type="button">
               <span class="visually-hidden">Первый товар</span>
             </button>
-            <span class="slider-pagination-parameters"><b class="slider-pagination-value">800 м</b> Дальность полета</span>
-            <span class="slider-pagination-parameters"><b class="slider-pagination-value">50 м</b> Радиус поражения</span>
+            <table class="slider-pagination-parameters">
+              <tr class="slider-pagination-value">
+                <td>800 м</td>
+                <td>50 м</td>
+              </tr>
+              <tr class="slider-pagination-value">
+                <td>Дальность полета</td>
+                <td>Радиус поражения</td>
+              </tr>
+            </table>
           </li>
           <li class="slider-pagination-item">
             <h3 class="slider-pagination-title">Худеем правильно!</h3>
@@ -97,7 +105,14 @@
             <button class="slider-pagination-button slider-pagination-current" type="button">
               <span class="visually-hidden">Второй товар</span>
             </button>
-            <span class="slider-pagination-parameters"><b class="slider-pagination-value">48 часов</b> Без подзарядки</span>
+            <table class="slider-pagination-parameters">
+              <tr class="slider-pagination-value">
+                <td>48 часов</td>
+              </tr>
+              <tr class="slider-pagination-value">
+                <td>Без подзарядки</td>
+              </tr>
+            </table>
           </li>
           <li class="slider-pagination-item">
             <h3 class="slider-pagination-title">Делай селфи, как Бен Стиллер!</h3>
@@ -106,9 +121,18 @@
             <button class="slider-pagination-button slider-pagination-current" type="button">
               <span class="visually-hidden">Первый товар</span>
             </button>
-            <span class="slider-pagination-parameters"><b class="slider-pagination-value">8,5 м</b> Длина палки</span>
-            <span class="slider-pagination-parameters"><b class="slider-pagination-value">5 кг</b> Вес палки</span>
-            <span class="slider-pagination-parameters"><b class="slider-pagination-value">Карбон</b> Материал</span>
+            <table class="slider-pagination-parameters">
+              <tr class="slider-pagination-value">
+                <td>8,5 м</td>
+                <td>5 кг</td>
+                <td>Карбон</td>
+              </tr>
+              <tr class="slider-pagination-value">
+                <td>Длина палки</td>
+                <td>Вес палки</td>
+                <td>Материал</td>
+              </tr>
+            </table>
           </li>
         </ol>
       </article>
@@ -142,18 +166,21 @@
             <h3 class="information-delivery">
               <button class="information-button" type="button">
                 <span class="information-button-name">Доставка</span>
+              </button>
             </h3>
           </li>
           <li class="information-item">
             <h3 class="information-warranty">
               <button class="information-button" type="button">
                 <span class="information-button-name">Гарантия</span>
+              </button>
             </h3>
           </li>
           <li class="information-item">
             <h3 class="information-credit">
               <button class="information-button" type="button">
                 <span class="information-button-name">Кредит</span>
+              </button>
             </h3>
           </li>
         </ol>
@@ -195,7 +222,7 @@
         <h2 class="subscribe-title">Подпишитесь<br>на рассылку</h2>
         <p class="subscribe-text">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-          <input type="text" placeholder="Ваш e-mail" type="email">
+          <input placeholder="Ваш e-mail" type="email">
           <button class="subscribe-button" type="submit">Подписаться</button>
           <p class="subscribe-free">Это бесплатно</p>
         </form>
@@ -227,6 +254,7 @@
         <h2 class="visually-hidden">Номер телефона</h2>
         <address class="contacts-address">
           <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        </address>
       </section>
       <section class="footer-social">
         <h2 class="visually-hidden">Давайте дружить</h2>
@@ -247,7 +275,6 @@
             </a>
           </li>
         </ul>
-        </address>
       </section>
     </footer>
   </body>
