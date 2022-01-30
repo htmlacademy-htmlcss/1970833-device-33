@@ -3,9 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>Интернет-магазин «Девайс»</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-    <header сlass="page-header">
+    <header>
       <img class="logo" src="images/header/logo.svg" width="145" height="36" alt="Логотип интернет-магазина «Девайс»">
       <nav class="navigation">
         <ul class="navigation-user">
@@ -89,12 +90,12 @@
             </button>
             <table class="slider-pagination-parameters">
               <tr class="slider-pagination-value">
-                <td>800 м</td>
-                <td>50 м</td>
+                <td class="row-1">800 м</td>
+                <td class="row-1">50 м</td>
               </tr>
               <tr class="slider-pagination-value">
-                <td>Дальность полета</td>
-                <td>Радиус поражения</td>
+                <td class="row-2">Дальность полета</td>
+                <td class="row-2">Радиус поражения</td>
               </tr>
             </table>
           </li>
@@ -107,10 +108,10 @@
             </button>
             <table class="slider-pagination-parameters">
               <tr class="slider-pagination-value">
-                <td>48 часов</td>
+                <td class="row-1">48 часов</td>
               </tr>
               <tr class="slider-pagination-value">
-                <td>Без подзарядки</td>
+                <td class="row-2">Без подзарядки</td>
               </tr>
             </table>
           </li>
@@ -123,14 +124,14 @@
             </button>
             <table class="slider-pagination-parameters">
               <tr class="slider-pagination-value">
-                <td>8,5 м</td>
-                <td>5 кг</td>
-                <td>Карбон</td>
+                <td class="row-1">8,5 м</td>
+                <td class="row-1">5 кг</td>
+                <td class="row-1">Карбон</td>
               </tr>
               <tr class="slider-pagination-value">
-                <td>Длина палки</td>
-                <td>Вес палки</td>
-                <td>Материал</td>
+                <td class="row-2">Длина палки</td>
+                <td class="row-2">Вес палки</td>
+                <td class="row-2">Материал</td>
               </tr>
             </table>
           </li>
@@ -139,22 +140,22 @@
       <section class="list-catalog-categories">
         <h2 class="visually-hidden">Список категорий каталога</h2>
         <ul class="list-catalog-categories-title">
-          <li class="list-catalog-categories-item">
+          <li class="list-catalog-categories-item-1">
              <a class="list-catalog-categories-link" href="#">Виртуальная реальность</a>
           </li>
-          <li class="list-catalog-categories-item">
+          <li class="list-catalog-categories-item-2">
             <a class="list-catalog-categories-link" href="#">Моноподы для селфи</a>
           </li>
-          <li class="list-catalog-categories-item">
+          <li class="list-catalog-categories-item-3">
             <a class="list-catalog-categories-link" href="#">Экшн-камеры</a>
           </li>
-          <li class="list-catalog-categories-item">
+          <li class="list-catalog-categories-item-4">
             <a class="list-catalog-categories-link" href="#">Фитнес-браслеты</a>
           </li>
-          <li class="list-catalog-categories-item">
+          <li class="list-catalog-categories-item-5">
             <a class="list-catalog-categories-link" href="#">Умные часы</a>
           </li>
-          <li class="list-catalog-categories-item">
+          <li class="list-catalog-categories-item-6">
             <a class="list-catalog-categories-link" href="#">Квадрокоптеры</a>
           </li>
         </ul>
@@ -164,33 +165,37 @@
         <ol class="information-title">
           <li class="information-item">
             <h3 class="information-delivery">
-              <button class="information-button" type="button">
+              <button class="information-button information-button-1" type="button">
                 <span class="information-button-name">Доставка</span>
               </button>
             </h3>
           </li>
           <li class="information-item">
             <h3 class="information-warranty">
-              <button class="information-button" type="button">
+              <button class="information-button information-button-2" type="button">
                 <span class="information-button-name">Гарантия</span>
               </button>
             </h3>
           </li>
           <li class="information-item">
             <h3 class="information-credit">
-              <button class="information-button" type="button">
+              <button class="information-button information-button-3" type="button">
                 <span class="information-button-name">Кредит</span>
               </button>
             </h3>
           </li>
         </ol>
-        <div class="information-description"><b class="information-description-title">Доставка</b>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
+        <div class="information-description">
+          <b class="information-description-title">Доставка</b>
+          <p class="information-description-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
         </div>
         <img class="information-image" src="images/main/icon-delivery.svg" width="136" height="164" alt="Иконка информации">
       </section>
-      <section class="delivery-under-order">
+      <section class="delivery">
         <h2 class="visually-hidden">Доставка под заказ</h2>
+        <img class="delivery-image-car" src="images/main/icon-delivery-car.svg" width="47" height="31" alt="Иконка доставки">
         <button class="delivery-under-order">Доставим редкий товар под заказ</button>
+        <img class="delivery-image-i" src="images/main/icon-i.svg" width="40" height="40" alt="Иконка помощь">
       </section>
       <section class="about">
         <h2 class="about-title">О нас</h2>
@@ -252,23 +257,23 @@
           </li>
         </ul>
         <address class="footer-information-contacts">
-          <a class="footer-information-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+          <a class="footer-information-contacts-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
         </address>
       </div>
       <div class="footer-social">
         <h2 class="visually-hidden">Давайте дружить</h2>
         <ul class="footer-social-list">
-          <li class="footer-social-item">
+          <li class="footer-social-item-facebook">
             <a class="button" href="https://facebook.com/htmlacademy">
               <span class="visually-hidden">Файсбук</span>
             </a>
           </li>
-          <li class="footer-social-item">
+          <li class="footer-social-item-instagram">
             <a class="button" href="https://instagram.com/htmlacademy/">
               <span class="visually-hidden">Инстаграм</span>
             </a>
           </li>
-          <li class="footer-social-item">
+          <li class="footer-social-item-twitter">
             <a class="button" href="https://twitter.com/htmlacademy_ru">
               <span class="visually-hidden">Твиттер</span>
             </a>
