@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-    <header сlass="page-header">
+    <header>
         <a class="navigation-logo" href="index.html">
-            <img class="logo" src="" alt="Логотип интернет-магазина «Девайс»">
+            <img class="logo" src="images/header/logo.svg" width="145" height="36" alt="Логотип интернет-магазина «Девайс»">
         </a>
         <nav class="navigation">
           <ul class="navigation-user">
@@ -48,7 +49,7 @@
         </nav>
       </header>
       <main class="main-inner">
-          <header class="inner-header">
+          <header>
               <h1 class="inner-header-title">Моноподы для селфи</h1>
               <ul class="breadcrumbs">
                   <li class="breadcrumbs-item">
@@ -142,29 +143,29 @@
             </a>
             <ul class="product-list">
                 <li class="product-card">
-                    <a class="product-card-link" href="">
-                        <img class="product-card-image" src="" alt="">
+                    <a class="product-card-link" href="#">
+                        <img class="product-card-image" src="images/catalog/monopod-nonprofessional.jpg" alt="Любительская селфи-палка">
                         <h3 class="product-card-title">Любительская селфи-палка</h3>
                         <span class="product-card-price">500 ₽</span>
                     </a>
                 </li>
                 <li class="product-card">
-                    <a class="product-card-link" href="">
-                        <img class="product-card-image" src="" alt="">
+                    <a class="product-card-link" href="#">
+                        <img class="product-card-image" src="images/catalog/monopod-professional.jpg" alt="Профессиональная селфи-палка">
                         <h3 class="product-card-title">Профессиональная селфи-палка</h3>
                         <span class="product-card-price">1500 ₽</span>
                     </a>
                 </li>
                 <li class="product-card">
-                    <a class="product-card-link" href="">
-                        <img class="product-card-image" src="" alt="">
+                    <a class="product-card-link" href="#">
+                        <img class="product-card-image" src="images/catalog/monopod-unsinkable.jpg" alt="Непотопляемая селфи-палка">
                         <h3 class="product-card-title">Непотопляемая селфи-палка</h3>
                         <span class="product-card-price">2500 ₽</span>
                     </a>
                 </li>
                 <li class="product-card">
-                    <a class="product-card-link" href="">
-                        <img class="product-card-image" src="" alt="">
+                    <a class="product-card-link" href="#">
+                        <img class="product-card-image" src="images/catalog/monopod-hand.jpg" alt="Селфи-палка «Следуй за мной»">
                         <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3>
                         <span class="product-card-price">1500 ₽</span>
                     </a>
@@ -191,15 +192,15 @@
           </section>
       </main>
       <footer class="page-footer">
-        <section class="footer-address">
-          <h2 class="visually-hidden">Адресс</h2>
-          <img class="footer-contacts-logo" src="" alt="Логотип интернет-магазина «Девайс»">
-          <address class="footer-contacts-address">
-            <p class="footer-contacts-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-          </address>
-        </section>
-        <section class="footer-information">
+        <div class="footer-logo">
+          <h2 class="visually-hidden">Логотип интернет-магазина «Девайс»</h2>
+          <img class="footer-logo-image" src="images/footer/footer-logo.svg" width="145" height="36" alt="Логотип интернет-магазина «Девайс»">  
+        </div>
+        <div class="footer-information">
           <h2 class="visually-hidden">Информация</h2>
+          <address class="footer-information-address">
+            <p class="footer-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+          </address>
           <ul class="footer-information-list">
             <li class="footer-information-item">
               <a class="footer-information-button" href="#">Доставка</a>
@@ -211,33 +212,36 @@
               <a class="footer-information-button" href="#">Контакты</a>
             </li>
           </ul>
-        </section>
-        <section class="footer-phone">
-          <h2 class="visually-hidden">Номер телефона</h2>
-          <address class="contacts-address">
-            <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+          <address class="footer-information-contacts">
+            <a class="footer-information-contacts-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
           </address>
-        </section>
-        <section class="footer-social">
+        </div>
+        <div class="footer-social">
           <h2 class="visually-hidden">Давайте дружить</h2>
           <ul class="footer-social-list">
-            <li class="footer-social-item">
+            <li class="footer-social-item-facebook">
               <a class="button" href="https://facebook.com/htmlacademy">
                 <span class="visually-hidden">Файсбук</span>
               </a>
             </li>
-            <li class="footer-social-item">
+            <li class="footer-social-item-instagram">
               <a class="button" href="https://instagram.com/htmlacademy/">
                 <span class="visually-hidden">Инстаграм</span>
               </a>
             </li>
-            <li class="footer-social-item">
+            <li class="footer-social-item-twitter">
               <a class="button" href="https://twitter.com/htmlacademy_ru">
                 <span class="visually-hidden">Твиттер</span>
               </a>
             </li>
           </ul>
-        </section>
+          <p class="footer-social-htmlacademy">
+            <a class="button" href="https://htmlacademy.ru">
+              <span class="visually-hidden">Сделано в HTMLAcademy</span>
+              <img class="footer-htmlacademy-logo" src="images/footer/footer-htmlacademy.svg" width="115" height="33" alt="Логотип разработчика">
+            </a>
+          </p>
+        </div>
       </footer>
   </body>
 </html>
