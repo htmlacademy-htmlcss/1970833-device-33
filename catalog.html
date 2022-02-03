@@ -13,14 +13,15 @@
         <nav class="navigation">
           <ul class="navigation-user">
             <li class="navigation-user-item">
-              <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-                <input type="text" placeholder="Текст поиска">
-                <button class="subscribe-button" type="submit">Найти</button>
+              <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+                <input class="search-text" type="text" placeholder="Текст поиска">
+                <button class="search-button" type="submit">Найти</button>
               </form>
               <a class="visually-hidden" href="#">Поиск</a>
             </li>
             <li class="navigation-user-item">
-              <a class="navigation-user-link" href="#">Войти</a>
+              <p class="user">Коля Петухов</p>
+              <a class="navigation-user-link-out" href="#">Выйти</a>
             </li>
             <li class="navigation-user-item">
               <a class="navigation-user-link" href="#">Сравнить</a>
@@ -174,7 +175,7 @@
             <button class="button pagination-show-more" type="button">Загрузить ещё</button>
             <ul class="pagination">
                 <li class="pagination-item">
-                    <a class="pagination-link pagination-prev pagination-disabled">Назад</a>
+                    <a class="pagination-prev pagination-disabled">Назад</a>
                 </li>
                 <li class="pagination-item">
                     <a class="pagination-link pagination-current">1</a>
@@ -186,7 +187,7 @@
                     <a class="pagination-link" href="#">3</a>
                 </li>
                 <li class="pagination-item">
-                    <a class="pagination-link pagination-next" href="#">Вперёд</a>
+                    <a class="pagination-next" href="#">Вперёд</a>
                 </li>
             </ul>
           </section>
@@ -199,7 +200,7 @@
         <div class="footer-information">
           <h2 class="visually-hidden">Информация</h2>
           <address class="footer-information-address">
-            <p class="footer-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+            <p class="footer-address-text">Санкт-Петербург, набережная<br>реки Карповки, 5, литера П.</p>
           </address>
           <ul class="footer-information-list">
             <li class="footer-information-item">
