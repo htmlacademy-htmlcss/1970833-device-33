@@ -148,13 +148,12 @@ header {
 }
 
 .carousel {
-    display: flex;
-    flex-direction: column;
     margin: 0 auto;
 }
 
 .slider-pagination {
     display: flex;
+    flex-direction: column;
     padding: 0;
 }
 
@@ -168,10 +167,15 @@ header {
     color: #FFFFFF;
 }
 
-.slider-pagination-image {
+.slider-pagination-item {
+    display: flex;
+    width: 1160px;
+    list-style-type: none;
+}
+
+.slider-image {
     width: 560px;
     margin-right: 40px;
-    list-style-type: none;
 }
 
 .slider-pagination-description {
@@ -187,7 +191,7 @@ header {
     line-height: 50px; 
 }
 
-.slider-pagination-description {
+.slider-pagination-text {
     color: #444444;
 }
 
@@ -221,7 +225,7 @@ header {
 }
     
 
-.list-categories-title {
+.list-categories {
     width: 1160px;
     display: flex;
     justify-content: space-between;
@@ -239,52 +243,36 @@ header {
     text-decoration: none;
     color: #000000;
 }
-.list-categories-item-virtual {
+
+.list-categories-item {
     width: 160px;
     height: 253px;
     background-color: #FFE17F;
-    background-image: url(../images/catalog/catalog-images-1.svg);
     background-repeat: no-repeat;
+}
+
+.list-categories-item-virtual {
+    background-image: url(../images/catalog/catalog-images-1.svg);
 }
 
 .list-categories-item-monopod {
-    width: 160px;
-    height: 253px;
-    background-color: #FFE17F;
     background-image: url(../images/catalog/catalog-images-2.svg);
-    background-repeat: no-repeat;
 }
 
 .list-categories-item-cameras {
-    width: 160px;
-    height: 253px;
-    background-color: #FFE17F;
     background-image: url(../images/catalog/catalog-images-3.svg);
-    background-repeat: no-repeat;
 }
 
 .list-categories-item-bracelets {
-    width: 160px;
-    height: 253px;
-    background-color: #FFE17F;
     background-image: url(../images/catalog/catalog-images-4.svg);
-    background-repeat: no-repeat;
 }
 
 .list-categories-item-watches {
-    width: 160px;
-    height: 253px;
-    background-color: #FFE17F;
     background-image: url(../images/catalog/catalog-images-5.svg);
-    background-repeat: no-repeat;
 }
 
 .list-categories-item-quadcopter {
-    width: 160px;
-    height: 253px;
-    background-color: #FFE17F;
     background-image: url(../images/catalog/catalog-images-6.svg);
-    background-repeat: no-repeat;
 }
 
 .information {
@@ -380,7 +368,7 @@ header {
     padding: 0;
 }
 
-.image-i {
+.image-info {
     width: 125px;
 }
 

@@ -7,7 +7,9 @@
   </head>
   <body>
     <header>
-      <img class="logo" src="images/header/logo.svg" width="145" height="36" alt="Логотип интернет-магазина «Девайс»">
+      <a class="navigation-logo">
+        <img class="logo" src="images/header/logo.svg" width="145" height="36" alt="Логотип интернет-магазина «Девайс»">
+      </a>
       <ul class="header-user">
         <li class="header-user-item">
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -52,107 +54,109 @@
         <article class="carousel-products">
           <h2 class="visually-hidden" hidden>Карусель товаров</h2>
           <div class="carousel">
-            <div class="carousel-products-number">01</div>
-            <ol class="slider-pagination">
-              <li class="slider-pagination-image">
-                <img class="slider-image" src="images/carousel/quadrocopter.png" width="560" height="560" alt="Квадрокоптер с лазером">
-              </li>
-              <li class="slider-pagination-description">
-                <h3 class="slider-pagination-title">Порхает как бабочка,<br>жалит как пчела!</h3>
-                <p class="slider-pagination-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-                <a class="button" href="#">Подробнее</a>
-                <table class="slider-pagination-parameters">
-                  <tr class="slider-pagination-value">
-                    <td class="table-row-1">800 м</td>
-                    <td class="table-row-1">50 м</td>
-                  </tr>
-                  <tr class="slider-pagination-value">
-                    <td class="table-row-2">Дальность полета</td>
-                    <td class="table-row-2">Радиус поражения</td>
-                  </tr>
-                </table>
-              </li>
-            </ol>
             <button class="slider-button slider-prev" type="button">
               <span class="visually-hidden">Предыдущий товар</span>
             </button>
             <button class="slider-button slider-next" type="button">
               <span class="visually-hidden">Следующий товар</span>
             </button>
-            <div class="pagination-button">
-              <button class="slider-pagination-button slider-pagination-current" type="button">
-                <span class="visually-hidden">Первый товар</span>
-              </button>
-              <button class="slider-pagination-button slider-pagination-current" type="button">
-                <span class="visually-hidden">Второй товар</span>
-              </button>
-              <button class="slider-pagination-button slider-pagination-current" type="button">
-                <span class="visually-hidden">Третий товар</span>
-              </button>
-            </div>
-            <div class="carousel-products-number">02</div>
             <ol class="slider-pagination">
-              <li class="slider-pagination-image">
+              <li class="slider-pagination-item">
+                <img class="slider-image" src="images/carousel/quadrocopter.png" width="560" height="560" alt="Квадрокоптер с лазером">
+                <div class="slider-pagination-description">
+                  <div class="carousel-products-number">01</div>
+                  <h3 class="slider-pagination-title">Порхает как бабочка,<br>жалит как пчела!</h3>
+                  <p class="slider-pagination-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+                  <div class="pagination-button">
+                    <a class="button" href="#">Подробнее</a>
+                    <button class="slider-pagination-button slider-pagination-current" type="button">
+                      <span class="visually-hidden">Первый товар</span>
+                    </button>
+                    <button class="slider-pagination-button slider-pagination-current" type="button">
+                      <span class="visually-hidden">Второй товар</span>
+                    </button>
+                    <button class="slider-pagination-button slider-pagination-current" type="button">
+                      <span class="visually-hidden">Третий товар</span>
+                    </button>
+                  </div>
+                  <table class="slider-pagination-parameters">
+                    <tbody>
+                      <tr class="slider-pagination-value">
+                        <td class="table-row-1">800 м</td>
+                        <td class="table-row-1">50 м</td>
+                      </tr>
+                      <tr class="slider-pagination-value">
+                        <td class="table-row-2">Дальность полета</td>
+                        <td class="table-row-2">Радиус поражения</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </li>
+              <li class="slider-pagination-item">
                 <img class="slider-image" src="images/carousel/bracelet.png" width="560" height="560" alt="Фитнес-часы">
+                <div class="slider-pagination-description">
+                  <div class="carousel-products-number">02</div>
+                  <h3 class="slider-pagination-title">Худеем<br>правильно!</h3>
+                  <p class="slider-pagination-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+                  <a class="button" href="#">Подробнее</a>
+                  <table class="slider-pagination-parameters">
+                    <tbody>
+                      <tr class="slider-pagination-value">
+                        <td class="table-row-1">48 часов</td>
+                      </tr>
+                      <tr class="slider-pagination-value">
+                        <td class="table-row-2">Без подзарядки</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </li>
-              <li class="slider-pagination-description">
-                <h3 class="slider-pagination-title">Худеем<br>правильно!</h3>
-                <p class="slider-pagination-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-                <a class="button" href="#">Подробнее</a>
-                <table class="slider-pagination-parameters">
-                  <tr class="slider-pagination-value">
-                    <td class="table-row-1">48 часов</td>
-                  </tr>
-                  <tr class="slider-pagination-value">
-                    <td class="table-row-2">Без подзарядки</td>
-                  </tr>
-                </table>
-              </li>
-            </ol>
-            <div class="carousel-products-number">03</div>
-            <ol class="slider-pagination">
-              <li class="slider-pagination-image">
+              <li class="slider-pagination-item">
                 <img class="slider-image" src="images/carousel/selfie-stick.png" width="560" height="560" alt="Селфи-палка">
-              </li>
-              <li class="slider-pagination-description">
-                <h3 class="slider-pagination-title">Делай селфи,<br>как Бен Стиллер!</h3>
-                <p class="slider-pagination-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
-                <a class="button" href="#">Подробнее</a>
-                <table class="slider-pagination-parameters">
-                  <tr class="slider-pagination-value">
-                    <td class="table-row-1">8,5 м</td>
-                    <td class="table-row-1">5 кг</td>
-                    <td class="table-row-1">Карбон</td>
-                  </tr>
-                  <tr class="slider-pagination-value">
-                    <td class="table-row-2">Длина палки</td>
-                    <td class="table-row-2">Вес палки</td>
-                    <td class="table-row-2">Материал</td>
-                  </tr>
-                </table>
+                <div class="slider-pagination-description">
+                  <div class="carousel-products-number">03</div>
+                  <h3 class="slider-pagination-title">Делай селфи,<br>как Бен Стиллер!</h3>
+                  <p class="slider-pagination-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
+                  <a class="button" href="#">Подробнее</a>
+                  <table class="slider-pagination-parameters">
+                    <tbody>
+                      <tr class="slider-pagination-value">
+                        <td class="table-row-1">8,5 м</td>
+                        <td class="table-row-1">5 кг</td>
+                        <td class="table-row-1">Карбон</td>
+                      </tr>
+                      <tr class="slider-pagination-value">
+                        <td class="table-row-2">Длина палки</td>
+                        <td class="table-row-2">Вес палки</td>
+                        <td class="table-row-2">Материал</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </li>
             </ol>
           </div>
         </article>
         <section class="categories">
           <h2 class="visually-hidden" hidden>Список категорий каталога</h2>
-          <ul class="list-categories-title">
-            <li class="list-categories-item-virtual">
+          <ul class="list-categories">
+            <li class="list-categories-item list-categories-item-virtual">
               <a class="list-categories-link" href="#">Виртуальная реальность</a>
             </li>
-            <li class="list-categories-item-monopod">
+            <li class="list-categories-item list-categories-item-monopod">
               <a class="list-categories-link" href="#">Моноподы для селфи</a>
             </li>
-            <li class="list-categories-item-cameras">
+            <li class="list-categories-item list-categories-item-cameras">
               <a class="list-categories-link" href="#">Экшн-камеры</a>
             </li>
-            <li class="list-categories-item-bracelets">
+            <li class="list-categories-item list-categories-item-bracelets">
               <a class="list-categories-link" href="#">Фитнес-браслеты</a>
             </li>
-            <li class="list-categories-item-watches">
+            <li class="list-categories-item list-categories-item-watches">
               <a class="list-categories-link" href="#">Умные часы</a>
             </li>
-            <li class="list-categories-item-quadcopter">
+            <li class="list-categories-item list-categories-item-quadcopter">
               <a class="list-categories-link" href="#">Квадрокоптеры</a>
             </li>
           </ul>
@@ -197,8 +201,8 @@
           <img class="delivery-image-car" src="images/main/icon-delivery-car.svg" width="47" height="31" alt="Иконка доставки">
         </div>
         <button class="delivery-under-order">Доставим редкий товар под заказ</button>
-        <div class="image-i">
-          <img class="delivery-image-i" src="images/main/icon-i.svg" width="2" height="8" alt="Иконка помощь">
+        <div class="image-info">
+          <img class="delivery-image-info" src="images/main/icon-info.svg" width="2" height="8" alt="Иконка помощь">
         </div>
       </section>
       <div class="about-contacts">
@@ -247,7 +251,9 @@
       <div class="page-footer-container">
         <div class="footer-logo">
           <h2 class="visually-hidden" hidden>Логотип интернет-магазина «Девайс»</h2>
-          <img class="footer-logo-image" src="images/footer/footer-logo.svg" width="145" height="36" alt="Логотип интернет-магазина «Девайс»">  
+          <a class="navigation-logo" href="index.html">
+            <img class="footer-logo-image" src="images/footer/footer-logo.svg" width="145" height="36" alt="Логотип интернет-магазина «Девайс»">  
+          </a>
         </div>
         <div class="footer-information">
           <h2 class="visually-hidden" hidden>Информация</h2>
