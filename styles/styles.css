@@ -77,14 +77,14 @@ header {
 }
 
 .search-form {
-    width: 525px;
+    display: flex;
+    width: 517px;
     height: 40px;
 }
 
 .search-text {
     width: 359px;
     height: 40px;
-    align-items: center;
     padding: 0;
     border: 2px solid #000000;
     box-sizing: border-box;
@@ -95,12 +95,22 @@ header {
     font-size: 16px;
     line-height: 20px;
     color: #000000;
-    background-color: 0%;;
+    background-color: transparent;
+}
+
+::placeholder {
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
 }
 
 .search-button {
     width: 160px;
     height: 40px;
+    margin-left: -2px;
     padding: 0;
     border: 2px solid #000000;
     box-sizing: border-box;
@@ -110,7 +120,25 @@ header {
     font-weight: normal;
     font-size: 16px;
     line-height: 20px;
+    background-color: transparent;
 }
+
+.header-user-item {
+    margin-right: 26px;
+}
+
+.header-user-item:nth-child(2) {
+    width: 231px;
+}
+
+.header-user-item:nth-child(3) {
+    margin-left: auto;
+}
+
+.header-user-item:last-child {
+    margin-right: 0;
+}
+    
 
 .navigation {
     margin-bottom: 16px;
@@ -162,11 +190,20 @@ header {
 
 .navigation-list-item {
     display: flex;
+    margin-right: 45px;
+}
+
+.navigation-list-item:last-child,
+.navigation-list-item:nth-child(1) {
+    margin-right: 0;
+}
+
+.navigation-list-item:nth-child(2) {
+    margin-left: auto;
 }
 
 .navigation-list-link {
     display: block;
-    padding: 2px 2px;
     margin: 15px 0;
     font-family: "Raleway", sans-serif;
     font-style: normal;
@@ -511,6 +548,12 @@ header {
     margin-bottom: 70px;
 }
 
+.black-line {
+    width: 84px;
+    height: 7px;
+    background-color: #000000;
+}
+
 .about {
     width: 520px;
     margin-right: 108px;
@@ -521,7 +564,7 @@ header {
 }
 
 .about-title {
-    margin: 47px 0;
+    margin: 40px 0;
     font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: 800;
@@ -562,7 +605,7 @@ header {
 }
 
 .contacts-title {
-    margin: 47px 0;
+    margin: 40px 0;
     font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: 800;
@@ -646,9 +689,10 @@ header {
 
 .text-email {
     width: 557px;
-    height: 56px;
+    height: 54px;
     padding: 0;
     border: 0;
+    border-bottom: 3px solid #C4C4C4;
     font-family: "Rubik", sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -656,6 +700,7 @@ header {
     line-height: 30px;
     color: #444444;
     opacity: 0.5;
+    background-color: transparent;
 }
 
 .subscribe-button {
@@ -773,6 +818,7 @@ header {
 
 .footer-logo-line {
     width: 80px;
+    height: 7px;
     margin-right: 424px;
     background-color: #FFC500;
 }
@@ -871,6 +917,7 @@ header {
 
 .catalog-right-column {
     width: 840px;
+    background-color: #FFFFFF;
 }
 
 .catalog-products-monopod-text {
@@ -953,6 +1000,7 @@ header {
     display: flex;
     justify-content: space-between;
     height: 70px;
+    background-color: #F0F0F0;
 }
 
 .select-control {
@@ -979,18 +1027,34 @@ header {
 }
 
 .product-list {
+    display: grid;
+    grid-template-columns: 360px 360px;
+    gap: 44px 40px;
     margin: 0;
     padding: 70px 40px 44px;
     background-color: #FFFFFF;
     list-style-type: none;
-    
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
 }
 
 .product-card-link {
     text-decoration: none;
+    min-height: 40px;
+    max-width: 205px;
+}
+
+.product-card-content {
+    display: flex;
+    margin-top: 32px;
+    justify-content: space-between;
 }
 
 .product-card-title {
+    margin: 0;
     font-weight: 700;
     font-size: 18px;
     line-height: 20px;
@@ -1007,6 +1071,8 @@ header {
     width: 760px;
     height: 55px;
     margin: 0 0 44px 40px;
+    border: 3px solid #E5E5E5;
+    
 }
 
 .button-pagination-show-more {
@@ -1029,6 +1095,8 @@ header {
     width: 760px;
     height: 71px;
     list-style-type: none;
+    background-color: #EBEBEB;
+    opacity: 0.71;
 }
 
 .pagination-item {
@@ -1036,6 +1104,9 @@ header {
 }
 
 .pagination-prev {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 128px;
     height: 71px;
     margin-right: 145.5px;
@@ -1050,6 +1121,9 @@ header {
 }
 
 .pagination-next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 141px;
     height: 71px;
     margin-left: 145.5px;
@@ -1064,6 +1138,9 @@ header {
 }
 
 .pagination-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 40px;
     height: 40px;
     margin-top: 15.5px;
