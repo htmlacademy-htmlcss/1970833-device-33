@@ -71,13 +71,25 @@ body {
     opacity: 0.3;
 }
 
-header {
+.header {
+    position: relative;
+    top: 40px;
     display: flex;
     flex-direction: column;
     width: 1160px;
+    height: 300px;
     margin: 0 auto;
     color:#000000;
     background-color:#FFE17F;
+}
+
+.header-catalog {
+    height: 186px;
+}
+
+.header-shift {
+    position: relative;
+    top: -40px;
 }
 
 .header-user {
@@ -404,13 +416,20 @@ header {
 }
 
 .main-container {
+    position: relative;
+    top: -110px;
     flex-grow: 1;
+}
+
+.main-inner {
+    top: 0px;
+    margin-top: 35px;
 }
 
 .page-container {
     width: 1160px;
     margin: 0 auto;
-    background-color: #ffffff;
+    background-color: #ffffff transparent;
     background-size: 100% auto;
 }
 
@@ -453,6 +472,8 @@ header {
     border: none;
     background-color: transparent;
     background-image: url(../images/carousel/arrow.svg);
+    cursor: pointer;
+    z-index: 100;
 }
 
 .slider-button:hover {
@@ -485,10 +506,27 @@ header {
     padding: 0;
     margin-right: 20px;
     cursor: pointer;
+    border-color: #000000;
+}
+
+.slider-pagination-button:hover {
+    opacity: 0.6;
+}
+
+.slider-pagination-button:focus {
+    outline: 2px solid #AF4FFF;
+}
+
+.slider-pagination-button:active {
+    opacity: 0.3;
 }
 
 .slider-pagination-button:last-child {
     margin-right: 0;
+}
+
+.slider-pagination-current {
+    background-color: #000000;
 }
 
 .slider {
@@ -500,7 +538,7 @@ header {
 
 .carousel-products-number {
     position: absolute;
-    top: 69px;
+    top: 85px;
     right: 49px;
     width: 250px;
     height: 135px;
@@ -508,6 +546,7 @@ header {
     font-size: 180px;
     text-align: right;
     color: #FFFFFF;
+    z-index: 0;
 }
 
 .slider-item {
@@ -523,12 +562,14 @@ header {
 }
 
 .slider-description {
+    position: relative;
+    z-index: 10;
     width: 560px;
     list-style-type: none;
 }
 
 .slider-title {
-    margin: 108px 0 29px;
+    margin: 121px 0 29px;
     font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: 800;
@@ -547,6 +588,7 @@ header {
     width: 76px;
     top: 362px;
     right: 0;
+    z-index: 100;
 }
 
 .button {
@@ -567,6 +609,7 @@ header {
     position: relative;
     width: 220px;
     height: 40px;
+    box-sizing: border-box;
     z-index: 0;
     margin-bottom: 49px;
 }
@@ -576,6 +619,7 @@ header {
     position: absolute;
     z-index: -1;
     top: 16px;
+    left: 0;
     width: 220px;
     height: 8px;
     background-color: #FFE17F;
@@ -719,8 +763,11 @@ header {
 }
 
 .information-button {
-    width: 160px;
-    padding: 9px 0 11px;
+    display: block;
+    width: 280px;
+    height: 40px;
+    margin: 0;
+    padding: 10px 115px 10px 0px;
     border: none;
     font-family: "Raleway", sans-serif;
     font-style: normal;
@@ -731,31 +778,27 @@ header {
     letter-spacing: 0.2em;
     text-transform: uppercase;
     cursor: pointer;
+    position: relative;
+    z-index: 10;
 }
 
 .information-button-action {
     color: #FFE17F;
-    background-color: transparent;
-}
-
-.information-delivery {
     background-color: #000000;
 }
 
+.information-item:nth-child(1) .information-button:before {
+    content: none;
+}
+
 .information-item {
-    position: relative;
+    width: 280px;
     height: 40px;
     list-style-type: none;
+
 }
 
 .information-item:last-child {
-    margin: 0;
-}
-
-.information-header {
-    position: relative;
-    width: 280px;
-    height: 40px;
     margin: 0;
 }
 
@@ -767,6 +810,7 @@ header {
     width: 160px;
     height: 8px;
     background-color: #FFE17F;
+    z-index: -1;
 }
 
 .information-description {
@@ -807,17 +851,9 @@ header {
     margin-bottom: 70px;
 }
 
-.delivery-image {
-   width: 125px;
-   height: 100px;
-   background-color: #FFE17F;
-}
-
-.delivery-image-car {
-    margin: 35px 39px;
-}
-
 .delivery-under-order {
+    display: flex;
+    justify-content: space-between;
     font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: 800;
@@ -826,14 +862,26 @@ header {
     text-align: center;
     letter-spacing: 0.2em;
     text-transform: uppercase;
+    color: #000000;
+    text-decoration: none;
     background-color: #F0F0F0;
-    width: 1035px;
+    width: 1160px;
     height: 100px;
     border: none;
     padding: 0;
     cursor: pointer;
     display: flex;
 }
+
+.delivery-image {
+    width: 125px;
+    height: 100px;
+    background-color: #FFE17F;
+ }
+ 
+ .delivery-image-car {
+     margin: 35px 39px;
+ }
 
 .delivery:hover .delivery-image {
     background-color: #FFC700;
@@ -852,7 +900,7 @@ header {
 }
 
 .delivery-text {
-    width: 910px;
+    /* width: 800px; */
     margin: 0;
     padding-top: 40px;
 }
@@ -993,7 +1041,7 @@ header {
 
 .about-text {
     display: block;
-    padding: 10px 0;
+    padding: 10px;
 }
 
 .contacts-title {
@@ -1250,22 +1298,23 @@ header {
     margin-bottom: 46px;
 }
 
-.footer-social-list {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-
-.footer-social-list::before {
+.footer-social::before {
+    position: absolute;
     content: '';
     order: 2;
     width: 80px;
     height: 7px;
     margin-top: 16.5px;
-    margin-right: 424px;
+    margin-left: 0px;
     background-color: #FFC500;
+}
+
+.footer-social-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 390px 0 505px;
+    padding: 0;
+    list-style-type: none;
 }
 
 .footer-social-item {
@@ -1319,7 +1368,7 @@ header {
 .footer-social-htmlacademy {
     width: 115px;
     height: 33px;
-    margin: 0 0 0 auto;
+    margin: 0;
 }
 
 .footer-logo-html {
@@ -1589,7 +1638,7 @@ header {
 .product-card-link {
     text-decoration: none;
     min-height: 40px;
-    width: 360px;
+    width: 240px;
 }
 
 .product-card-content {
@@ -1612,16 +1661,10 @@ header {
     color: #444444;
 }
 
-.pagination-show-more {
-    width: 760px;
-    height: 55px;
-    margin: 0 0 44px 40px;
-    border: 3px solid #E5E5E5;
-}
-
 .button-pagination-show-more {
     width: 760px;
     height: 55px;
+    margin: 0 0 44px 40px;
     padding: 0;
     font-family: "Raleway", sans-serif;
     font-style: normal;
@@ -1630,6 +1673,7 @@ header {
     line-height: 19px;
     border: none;
     background: #FFFFFF;
+    border: 3px solid #E5E5E5;
 }
 
 .pagination {

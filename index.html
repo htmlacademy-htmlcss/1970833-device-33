@@ -6,56 +6,58 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-    <header>
-      <a class="navigation-logo">
-        <img class="logo" src="images/header/logo.svg" width="145" height="36" alt="Логотип интернет-магазина «Девайс»">
-      </a>
-      <ul class="header-user">
-        <li class="header-user-item">
-          <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-            <input class="search-text" type="text" placeholder="Текст поиска" >
-            <button class="search-button" type="submit">Найти</button>
-          </form>
-          <a class="visually-hidden" href="#">Поиск</a>
-        </li>
-        <li class="header-user-item">
-          <a class="header-user-link" href="#">
-            <span>Войти</span>
-          </a>
-        </li>
-        <li class="header-user-item">
-          <a class="header-user-link" href="#">
-            <span>Сравнить</span>
-          </a>  
-        </li>
-        <li class="header-user-item">
-          <a class="header-user-link" href="#">
-            <div class="icon-backet"></div>
-            <span>Корзина</span> 
-          </a>
-        </li>
-      </ul>
-      <nav class="navigation">
-        <ul class="navigation-list">
-          <li class="navigation-list-item">
-            <a class="navigation-link-catalog" href="catalog.html">Каталог товаров</a>
-            <button class="navigation-list-button">
-              <span class="visually-hidden">Расскрыть каталог</span>
-            </button>
+    <header class="header">
+      <div class="header-shift">
+        <a class="navigation-logo">
+          <img class="logo" src="images/header/logo.svg" width="145" height="36" alt="Логотип интернет-магазина «Девайс»">
+        </a>
+        <ul class="header-user">
+          <li class="header-user-item">
+            <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+              <input class="search-text" type="text" placeholder="Текст поиска" >
+              <button class="search-button" type="submit">Найти</button>
+            </form>
+            <a class="visually-hidden" href="#">Поиск</a>
           </li>
-          <li class="navigation-list-item">
-            <a class="navigation-list-link " href="#">Доставка</a>
+          <li class="header-user-item">
+            <a class="header-user-link" href="#">
+              <span>Войти</span>
+            </a>
           </li>
-          <li class="navigation-list-item">
-            <a class="navigation-list-link" href="#">Гарантия</a>
+          <li class="header-user-item">
+            <a class="header-user-link" href="#">
+              <span>Сравнить</span>
+            </a>  
           </li>
-          <li class="navigation-list-item">
-            <a class="navigation-list-link" href="#">Контакты</a>
+          <li class="header-user-item">
+            <a class="header-user-link" href="#">
+              <div class="icon-backet"></div>
+              <span>Корзина</span> 
+            </a>
           </li>
         </ul>
-      </nav>
+        <nav class="navigation">
+          <ul class="navigation-list">
+            <li class="navigation-list-item">
+              <a class="navigation-link-catalog" href="catalog.html">Каталог товаров</a>
+              <button class="navigation-list-button">
+                <span class="visually-hidden">Расскрыть каталог</span>
+              </button>
+            </li>
+            <li class="navigation-list-item">
+              <a class="navigation-list-link " href="#">Доставка</a>
+            </li>
+            <li class="navigation-list-item">
+              <a class="navigation-list-link" href="#">Гарантия</a>
+            </li>
+            <li class="navigation-list-item">
+              <a class="navigation-list-link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <main class="main-container main-index">
+    <main class="main-container">
       <div class="page-container">
         <h1 class="visually-hidden">Интернет-магазин «Девайс»</h1>
         <article class="carousel-products">
@@ -71,10 +73,10 @@
               <button class="slider-pagination-button slider-pagination-current" type="button">
                 <span class="visually-hidden">Первый товар</span>
               </button>
-              <button class="slider-pagination-button slider-pagination-current" type="button">
+              <button class="slider-pagination-button" type="button">
                 <span class="visually-hidden">Второй товар</span>
               </button>
-              <button class="slider-pagination-button slider-pagination-current" type="button">
+              <button class="slider-pagination-button" type="button">
                 <span class="visually-hidden">Третий товар</span>
               </button>
             </div>
@@ -85,9 +87,7 @@
                 <div class="slider-description">
                   <h3 class="slider-title">Порхает как бабочка,<br>жалит как пчела!</h3>
                   <p class="slider-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-                  <div class="button-about-slider">
-                    <a class="button about-text" href="#">Подробнее</a>
-                  </div>
+                  <a class="button button-about-slider about-text" href="#">Подробнее</a>
                   <table class="slider-parameters">
                     <tbody>
                       <tr>
@@ -102,7 +102,7 @@
                   </table>
                 </div>
               </li>
-              <li class="slider-item">
+              <li class="slider-item visually-hidden">
                 <div class="carousel-products-number">02</div>
                 <img class="slider-image" src="images/carousel/bracelet.png" width="560" height="560" alt="Фитнес-часы">
                 <div class="slider-description">
@@ -123,7 +123,7 @@
                   </table>
                 </div>
               </li>
-              <li class="slider-item">
+              <li class="slider-item visually-hidden">
                 <div class="carousel-products-number">03</div>
                 <img class="slider-image" src="images/carousel/selfie-stick.png" width="560" height="560" alt="Селфи-палка">
                 <div class="slider-description">
@@ -186,25 +186,19 @@
           <h2 class="visually-hidden">Информация</h2>
           <ol class="information-title">
             <li class="information-item">
-              <h3 class="information-header information-delivery">
-                <button class="information-button information-button-action" type="button">
-                  Доставка
-                </button>
-              </h3>
+              <button class="information-button information-button-action" type="button">
+                Доставка
+              </button>
             </li>
             <li class="information-item">
-              <h3 class="information-header information-warranty">
-                <button class="information-button" type="button">
-                  Гарантия
-                </button>
-              </h3>
+              <button class="information-button" type="button">
+                Гарантия
+              </button>
             </li>
             <li class="information-item">
-              <h3 class="information-header information-credit">
-                <button class="information-button" type="button">
-                  Кредит
-                </button>
-              </h3>
+              <button class="information-button" type="button">
+                Кредит
+              </button>
             </li>
           </ol>
           <div class="information-description">
@@ -218,15 +212,15 @@
       </section>
       <section class="delivery">
         <h2 class="visually-hidden">Доставка под заказ</h2>
-        <button class="delivery-under-order">
+        <a class="delivery-under-order" href="#">
           <div class="delivery-image">
             <img class="delivery-image-car" src="images/main/icon-delivery-car.svg" width="47" height="31" alt="Иконка доставки">
           </div>
           <p class="delivery-text">Доставим редкий товар под заказ</p>
-        </button>
-        <div class="image-info">
-          <img class="delivery-image-info" src="images/main/icon-info.svg" width="2" height="12" alt="Иконка информации">
-        </div>
+          <div class="image-info">
+            <img class="delivery-image-info" src="images/main/icon-info.svg" width="2" height="12" alt="Иконка информации">
+          </div>
+        </a>
       </section>
       <div class="about-contacts">
       <section class="about">
