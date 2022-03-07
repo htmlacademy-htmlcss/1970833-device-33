@@ -63,12 +63,14 @@
         <article class="carousel-products">
           <h2 class="visually-hidden">Карусель товаров</h2>
           <div class="carousel">
-            <button class="slider-button slider-prev" type="button">
-              <span class="visually-hidden">Предыдущий товар</span>
-            </button>
-            <button class="slider-button slider-next" type="button">
-              <span class="visually-hidden">Следующий товар</span>
-            </button>
+            <div class="slider-control">
+              <button class="slider-button slider-prev" type="button">
+                <span class="visually-hidden">Предыдущий товар</span>
+              </button>
+              <button class="slider-button slider-next" type="button">
+                <span class="visually-hidden">Следующий товар</span>
+              </button>
+            </div>
             <div class="pagination-button">
               <button class="slider-pagination-button slider-pagination-current" type="button">
                 <span class="visually-hidden">Первый товар</span>
@@ -182,7 +184,7 @@
         </section>
       </div>
       <section class="information">
-        <div class="information-container">
+        <div class="information-container information-shift">
           <h2 class="visually-hidden">Информация</h2>
           <ol class="information-title">
             <li class="information-item">
@@ -300,18 +302,27 @@
           <h2 class="visually-hidden">Давайте дружить</h2>
           <ul class="footer-social-list">
             <li class="footer-social-item">
-              <a class="footer-social-link footer-social-facebook" href="https://facebook.com/htmlacademy">
+              <a class="footer-social-link" href="https://facebook.com/htmlacademy">
                 <span class="visually-hidden">Файсбук</span>
+                <svg class="footer-social-facebook" aria-hidden="true" focusable="false" width="9" height="18" viewBox="0 0 9 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.5 3H9V0H5.6C2.8 0 2 1.7 2 4.2V6H0v3h2v9h3V9h3.3l.6-3H5V4.5C5 3.7 5.3 3 6.5 3Z" fill="#444"/>
+                </svg>
               </a>
             </li>
             <li class="footer-social-item">
-              <a class="footer-social-link footer-social-instagram" href="https://instagram.com/htmlacademy/">
+              <a class="footer-social-link" href="https://instagram.com/htmlacademy/">
                 <span class="visually-hidden">Инстаграм</span>
+                <svg class="footer-social-instagram" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" fill="#444"/><path d="M14.7 1.3c-.9-.9-2-1.3-3.4-1.3H4.7A4.5 4.5 0 0 0 0 4.7v6.6c0 1.4.4 2.6 1.4 3.4.9.9 2 1.3 3.3 1.3h6.6c1.4 0 2.6-.4 3.4-1.3a5 5 0 0 0 1.3-3.4V4.7c0-1.4-.4-2.6-1.3-3.4ZM8 12.1A4.1 4.1 0 0 1 3.9 8c0-2.3 1.9-4.1 4.1-4.1 2.2 0 4.1 1.8 4.1 4.1s-1.9 4.1-4.1 4.1Zm4.6-7.4c-.7 0-1.3-.5-1.3-1.3s.5-1.3 1.3-1.3c.7 0 1.3.6 1.3 1.3 0 .7-.6 1.3-1.3 1.3Z" fill="#444"/>
+                </svg>
               </a>
             </li>
             <li class="footer-social-item">
-              <a class="footer-social-link footer-social-twitter" href="https://twitter.com/htmlacademy_ru">
+              <a class="footer-social-link" href="https://twitter.com/htmlacademy_ru">
                 <span class="visually-hidden">Твиттер</span>
+                <svg class="footer-social-twitter" aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.7.16c1.5-.5 2.6.3 3.2 1.1.5-.2 1.1-.4 1.7-.6 0 .8-.5 1.4-.8 1.6.7.2 1.2-.4 1.2-.4-.1.9-.9 1.7-1.4 1.9-.2 6.3-2.8 10.4-8.9 10.3h-.4c-.3 0-3.7-.4-4.3-1.8 2 .2 3.4-.4 4.1-1.1-.8-.3-2.4-.4-2.6-2.8.3.2.5.3 1.1.2-1.1-.8-2.3-1.5-2.2-3.5.3.3.9.5 1.2.4C1 5.26-.2 2.36.8.86c1.6 1.7 3.3 3.4 6.3 3.5.2-2.1 1-3.5 2.6-4.2Z" fill="#444"/>
+                </svg>
               </a>
             </li>
           </ul>
@@ -324,5 +335,40 @@
         </div>
       </div>
     </footer>
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-order">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Доставка под заказ</h2>
+          <form class="order-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="field-group">
+              <label class="order-text" for="order-name">Ваше имя:</label>
+              <input class="order-form-field field-icon-name" type="text" id="order-name" name="order-name" placeholder="Введите имя" required>
+            </p>
+            <p class="field-group order-form-email">
+              <label class="order-text" for="order-email">Ваш e-mail:</label>
+              <input class="order-form-field field-icon-email" type="email" id="order-email" name="order-email" placeholder="Введите e-mail" required>
+            </p>
+            <p class="field-group order-form-request">
+              <label class="order-text" for="order-request">Что нужно привезти:</label>
+              <input class="order-form-field field" type="text" id="order-request" name="order-request" placeholder="В свободной форме" required>
+            </p>
+            <p class="field-group order-form-quantity">
+              <label class="order-text" for="order-quantity">Количество:
+                <button class="info">
+                  <span class="visually-hidden">Посмотреть дополнительную информацию</span>
+                </button>
+              </label>
+              <a class="order-number-minus" href="#"></a>
+              <input class="order-form-field field-quantity" type="text" id="order-quantity" name="order-quantity" value="1">
+              <a class="order-number-plus" href="#"></a>
+            </p>
+            <button class="order-send" type="submit">Отправить</button>
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 </html>
