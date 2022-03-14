@@ -8,110 +8,108 @@
   </head>
   <body>
     <header class="header">
-      <div class="header-shift">
-        <a class="navigation-logo">
-          <img class="logo" src="images/header/logo.svg" width="145" height="36" alt="Логотип интернет-магазина «Девайс».">
-        </a>
-        <ul class="header-user">
-          <li class="header-user-item">
-            <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-              <input class="search-text" type="text" placeholder="Текст поиска" >
-              <button class="search-button" type="submit">Найти</button>
-            </form>
-            <a class="visually-hidden" href="#">Поиск.</a>
-          </li>
-          <li class="header-user-item">
-            <a class="header-user-link" href="#">
-              <span>Войти</span>
-            </a>
-          </li>
-          <li class="header-user-item">
-            <a class="header-user-link" href="#">
-              <span>Сравнить</span>
-            </a>  
-          </li>
-          <li class="header-user-item">
-            <a class="header-user-link" href="#">
-              <span>Корзина</span> 
-            </a>
-            <div class="popover-cart">
-              <div class="popover-content">
-                <h2 class="visually-hidden">Корзина.</h2>
-                <ul class="cart-items-list">
-                  <li class="cart-item">
-                    <a class="cart-item-link" href="#">
-                      <img class="cart-item-image" src="images/catalog/monopod-nonprofessional.jpg" width="39" height="43" alt="Любительская селфи-палка.">
-                      <p class="cart-item-text">Любительская селфи-палка</p>
-                    </a>
-                    <button class="delete-cart" type="button">
-                      <span class="visually-hidden">Удалить из корзины.</span>
-                    </button>
-                  </li>
-                  <li class="cart-item">
-                    <a class="cart-item-link" href="#">
-                      <img class="cart-item-image" src="images/catalog/monopod-professional.jpg" width="39" height="43" alt="Профессиональная селфи-палка.">
-                      <p class="cart-item-text">Профессиональная селфи-палка</p>
-                    </a>
-                    <button class="delete-cart" type="button">
-                      <span class="visually-hidden">Удалить из корзины.</span>
-                    </button>
-                  </li>
-                </ul>
-                <table class="popover-cart-total">
-                  <tbody class="cart-total">
-                    <tr>
-                      <td class="cart-total-cell">Товаров:</td>
-                      <td class="cart-total-cell">2</td>
-                    </tr>
-                    <tr>
-                      <td class="cart-total-cell">Сумма:</td>
-                      <td class="cart-total-cell">2000</td>
-                      <td class="cart-total-cell">₽</td>
-                    </tr>
-                  </tbody>
-                </table>
-                <a class="popover-open-cart" href="#">Открыть корзину</a>
-              </div>
-            </div>
-          </li>
-        </ul>
-        <nav class="navigation">
-          <ul class="navigation-list">
-            <li class="navigation-list-item">
-              <a class="navigation-link-catalog" href="catalog.html">Каталог товаров</a>
-              <button class="navigation-list-button" type="button">
-                <span class="visually-hidden">Расскрыть каталог.</span>
-              </button>
-            </li>
-            <li class="navigation-list-item">
-              <a class="navigation-list-link " href="#">Доставка</a>
-            </li>
-            <li class="navigation-list-item">
-              <a class="navigation-list-link" href="#">Гарантия</a>
-            </li>
-            <li class="navigation-list-item">
-              <a class="navigation-list-link" href="#">Контакты</a>
-            </li>
-            <li class="popover-catalog">
-              <h2 class="visually-hidden">Каталог товаров.</h2>
-              <ul class="catalog-items-list">
-                <li class="catalog-item">
-                  <a class="catalog-item-link" href="#">Виртуальная реальность</a>
-                  <a class="catalog-item-link" href="#">Моноподы для селфи</a>
-                  <a class="catalog-item-link" href="#">Экшн-камеры</a>
+      <a class="navigation-logo">
+        <img class="logo" src="images/header/logo.svg" width="145" height="36" alt="Логотип интернет-магазина «Девайс».">
+      </a>
+      <ul class="header-user">
+        <li class="header-user-item">
+          <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+            <input class="search-text" type="text" placeholder="Текст поиска" >
+            <button class="search-button" type="submit">Найти</button>
+          </form>
+          <a class="visually-hidden" href="#">Поиск.</a>
+        </li>
+        <li class="header-user-item">
+          <a class="header-user-link" href="#">
+            <span>Войти</span>
+          </a>
+        </li>
+        <li class="header-user-item">
+          <a class="header-user-link" href="#">
+            <span>Сравнить</span>
+          </a>  
+        </li>
+        <li class="header-user-item">
+          <a class="header-user-link" href="#">
+            <span>Корзина</span> 
+          </a>
+          <div class="popover-cart">
+            <div class="popover-content">
+              <h2 class="visually-hidden">Корзина.</h2>
+              <ul class="cart-items-list">
+                <li class="cart-item">
+                  <a class="cart-item-link" href="#">
+                    <img class="cart-item-image" src="images/catalog/monopod-nonprofessional.jpg" width="39" height="43" alt="Любительская селфи-палка.">
+                    <p class="cart-item-text">Любительская селфи-палка</p>
+                  </a>
+                  <button class="delete-cart" type="button">
+                    <span class="visually-hidden">Удалить из корзины.</span>
+                  </button>
                 </li>
-                <li class="catalog-item">
-                  <a class="catalog-item-link" href="#">Фитнес-браслеты</a>
-                  <a class="catalog-item-link" href="#">Умные часы</a>
-                </li>
-                <li class="catalog-item">
-                  <a class="catalog-item-link" href="#">Квадракоптеры</a>
+                <li class="cart-item">
+                  <a class="cart-item-link" href="#">
+                    <img class="cart-item-image" src="images/catalog/monopod-professional.jpg" width="39" height="43" alt="Профессиональная селфи-палка.">
+                    <p class="cart-item-text">Профессиональная селфи-палка</p>
+                  </a>
+                  <button class="delete-cart" type="button">
+                    <span class="visually-hidden">Удалить из корзины.</span>
+                  </button>
                 </li>
               </ul>
-            </li>
-          </ul>
-        </nav>
-      </div>
+              <table class="popover-cart-total">
+                <tbody class="cart-total">
+                  <tr>
+                    <td class="cart-total-cell">Товаров:</td>
+                    <td class="cart-total-cell">2</td>
+                  </tr>
+                  <tr>
+                    <td class="cart-total-cell">Сумма:</td>
+                    <td class="cart-total-cell">2000</td>
+                    <td class="cart-total-cell">₽</td>
+                  </tr>
+                </tbody>
+              </table>
+              <a class="popover-open-cart" href="#">Открыть корзину</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <nav class="navigation">
+        <ul class="navigation-list">
+          <li class="navigation-list-item">
+            <a class="navigation-link-catalog" href="catalog.html">Каталог товаров</a>
+            <button class="navigation-list-button" type="button">
+              <span class="visually-hidden">Расскрыть каталог.</span>
+            </button>
+          </li>
+          <li class="navigation-list-item">
+            <a class="navigation-list-link " href="#">Доставка</a>
+          </li>
+          <li class="navigation-list-item">
+            <a class="navigation-list-link" href="#">Гарантия</a>
+          </li>
+          <li class="navigation-list-item">
+            <a class="navigation-list-link" href="#">Контакты</a>
+          </li>
+          <li class="popover-catalog">
+            <h2 class="visually-hidden">Каталог товаров.</h2>
+            <ul class="catalog-items-list">
+              <li class="catalog-item">
+                <a class="catalog-item-link" href="#">Виртуальная реальность</a>
+                <a class="catalog-item-link" href="#">Моноподы для селфи</a>
+                <a class="catalog-item-link" href="#">Экшн-камеры</a>
+              </li>
+              <li class="catalog-item">
+                <a class="catalog-item-link" href="#">Фитнес-браслеты</a>
+                <a class="catalog-item-link" href="#">Умные часы</a>
+              </li>
+              <li class="catalog-item">
+                <a class="catalog-item-link" href="#">Квадракоптеры</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main class="main-container">
       <div class="page-container">
@@ -236,7 +234,7 @@
         </section>
       </div>
       <section class="information">
-        <div class="information-container information-shift">
+        <div class="information-container">
           <h2 class="visually-hidden">Информация.</h2>
           <ol class="information-title">
             <li class="information-item">
