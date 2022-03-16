@@ -8,7 +8,7 @@
   </head>
   <body>
     <header class="header header-catalog">
-      <a class="navigation-logo" href="index.html">
+      <a class="header-logo" href="index.html">
         <img class="logo" src="images/header/logo.svg" width="145" height="36" alt="Логотип интернет-магазина «Девайс»">
       </a>
       <ul class="header-user">
@@ -21,7 +21,7 @@
         </li>
         <li class="header-user-item account">
           <a class="user" href="#">Коля Петухов</a>
-          <a class="header-user-link-out" href="#">Выйти</a>
+          <a class="header-user-out" href="#">Выйти</a>
         </li>
         <li class="header-user-item">
           <a class="header-user-link" href="#">Сравнить</a>
@@ -86,10 +86,10 @@
         <div class="catalog">
           <h2 class="visually-hidden">Список моноподов с фильтрами.</h2>
           <div class="filter">
-            <span class="catalog-products-monopod-text">Фильтр:</span>
+            <span class="catalog-products-text">Фильтр:</span>
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
               <fieldset class="catalog-filter-monopod">
-                <legend class="catalog-filter-monopod-title">Стоимость</legend>
+                <legend class="filter-monopod-title">Стоимость</legend>
                 <div class="range">
                   <div class="range-scale">
                     <div class="range-bar" style="left: 0px; width: 119px">
@@ -112,37 +112,37 @@
                 </div>
               </fieldset>
               <fieldset class="catalog-filter-monopod">
-                <legend class="catalog-filter-monopod-title">Цвет</legend>
-                <ul class="catalog-filter-monopod-list">
-                  <li class="catalog-filter-monopod-item">
+                <legend class="filter-monopod-title">Цвет</legend>
+                <ul class="filter-monopod-list">
+                  <li class="filter-monopod-item">
                     <label class="control">
                       <input class="visually-hidden control-input" type="checkbox" name="черный" checked>
                       <span class="control-mark"></span>
                       <span class="control-label">Черный</span>
                     </label>
                   </li>
-                  <li class="catalog-filter-monopod-item">
+                  <li class="filter-monopod-item">
                     <label class="control">
                       <input class="visually-hidden control-input" type="checkbox" name="белый" checked>
                       <span class="control-mark"></span>
                       <span class="control-label">Белый</span>
                     </label>
                   </li>
-                  <li class="catalog-filter-monopod-item">
+                  <li class="filter-monopod-item">
                     <label class="control">
                       <input class="visually-hidden control-input" type="checkbox" name="синий">
                       <span class="control-mark"></span>
                       <span class="control-label">Синий</span>
                     </label>
                   </li>
-                  <li class="catalog-filter-monopod-item">
+                  <li class="filter-monopod-item">
                     <label class="control">
                       <input class="visually-hidden control-input" type="checkbox" name="красный">
                       <span class="control-mark"></span>
                       <span class="control-label">Красный</span>
                     </label>
                   </li>
-                  <li class="catalog-filter-monopod-item">
+                  <li class="filter-monopod-item">
                     <label class="control">
                       <input class="visually-hidden control-input" type="checkbox" name="Розовый">
                       <span class="control-mark"></span>
@@ -152,16 +152,16 @@
                 </ul>
               </fieldset>
               <fieldset class="catalog-filter-monopod">
-                <legend class="catalog-filter-monopod-title">Bluetooth</legend>
-                <ul class="catalog-filter-monopod-list">
-                  <li class="catalog-filter-monopod-item">
+                <legend class="filter-monopod-title">Bluetooth</legend>
+                <ul class="filter-monopod-list">
+                  <li class="filter-monopod-item">
                     <label class="control">
                       <input class="visually-hidden control-input" type="radio" name="bluetooth" value="есть" checked>
                       <span class="control-mark"></span>
                       <span class="control-label">Есть</span>
                     </label>
                   </li>
-                  <li class="catalog-filter-monopod-item">
+                  <li class="filter-monopod-item">
                     <label class="control">
                       <input class="visually-hidden control-input" type="radio" name="bluetooth" value="нет">
                       <span class="control-mark"></span>
@@ -175,20 +175,20 @@
           </div>
           <div class="catalog-right-column">
             <div class="sorting-container">
-              <span class="catalog-right-column-text">Сортировка:</span>
+              <span class="right-column-text">Сортировка:</span>
               <select class="select-control">
                 <option value="popular">Популярные</option>
                 <option value="popular">Дешевые</option>
                 <option value="popular">Дорогие</option>
               </select>
               <div class="catalog-products-sorting">
-                <a class="catalog-products-monopod-sorting" href="#">
+                <a class="products-monopod-sorting" href="#">
                   <span class="visually-hidden">От меньшего к большему.</span>
                   <svg class="catalog-sorting-icon" aria-hidden="true" focusable="false" width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="m6 0 5.5 10H.5" fill="#000"/>
                   </svg>
                 </a>
-                <a class="catalog-products-monopod-sorting" href="#">
+                <a class="products-monopod-sorting" href="#">
                   <span class="visually-hidden">От большему к меньшему.</span>
                   <svg class="catalog-sorting-icon" aria-hidden="true" focusable="false" width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="m6 0 5.5 10H.5" fill="#000"/>
@@ -258,7 +258,7 @@
                 </div>
               </li>
             </ul>
-            <button class="button button-pagination-show-more" type="button">Загрузить ещё</button>
+            <button class="button button-pagination-show" type="button">Загрузить ещё</button>
             <ul class="pagination">
               <li class="pagination-item">
                 <a class="pagination-item-button pagination-prev pagination-disabled" href="#">Назад</a>
@@ -311,7 +311,7 @@
             </li>
           </ul>
           <address class="footer-information-contacts">
-            <a class="footer-information-contacts-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
+            <a class="footer-contacts-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
           </address>
         </div>
         <div class="footer-social">
@@ -320,7 +320,7 @@
             <li class="footer-social-item">
               <a class="footer-social-link" href="https://facebook.com/htmlacademy">
                 <span class="visually-hidden">Файсбук.</span>
-                <svg class="footer-social-facebook" aria-hidden="true" focusable="false" width="9" height="18" viewBox="0 0 9 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="footer-social-icon" aria-hidden="true" focusable="false" width="9" height="18" viewBox="0 0 9 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M6.5 3H9V0H5.6C2.8 0 2 1.7 2 4.2V6H0v3h2v9h3V9h3.3l.6-3H5V4.5C5 3.7 5.3 3 6.5 3Z" fill="#444"/>
                 </svg>
               </a>
@@ -328,7 +328,7 @@
             <li class="footer-social-item">
               <a class="footer-social-link" href="https://instagram.com/htmlacademy/">
                 <span class="visually-hidden">Инстаграм.</span>
-                <svg class="footer-social-instagram" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="footer-social-icon" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" fill="#444"/><path d="M14.7 1.3c-.9-.9-2-1.3-3.4-1.3H4.7A4.5 4.5 0 0 0 0 4.7v6.6c0 1.4.4 2.6 1.4 3.4.9.9 2 1.3 3.3 1.3h6.6c1.4 0 2.6-.4 3.4-1.3a5 5 0 0 0 1.3-3.4V4.7c0-1.4-.4-2.6-1.3-3.4ZM8 12.1A4.1 4.1 0 0 1 3.9 8c0-2.3 1.9-4.1 4.1-4.1 2.2 0 4.1 1.8 4.1 4.1s-1.9 4.1-4.1 4.1Zm4.6-7.4c-.7 0-1.3-.5-1.3-1.3s.5-1.3 1.3-1.3c.7 0 1.3.6 1.3 1.3 0 .7-.6 1.3-1.3 1.3Z" fill="#444"/>
                 </svg>
               </a>
@@ -336,7 +336,7 @@
             <li class="footer-social-item">
               <a class="footer-social-link" href="https://twitter.com/htmlacademy_ru">
                 <span class="visually-hidden">Твиттер.</span>
-                <svg class="footer-social-twitter" aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="footer-social-icon" aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M9.7.16c1.5-.5 2.6.3 3.2 1.1.5-.2 1.1-.4 1.7-.6 0 .8-.5 1.4-.8 1.6.7.2 1.2-.4 1.2-.4-.1.9-.9 1.7-1.4 1.9-.2 6.3-2.8 10.4-8.9 10.3h-.4c-.3 0-3.7-.4-4.3-1.8 2 .2 3.4-.4 4.1-1.1-.8-.3-2.4-.4-2.6-2.8.3.2.5.3 1.1.2-1.1-.8-2.3-1.5-2.2-3.5.3.3.9.5 1.2.4C1 5.26-.2 2.36.8.86c1.6 1.7 3.3 3.4 6.3 3.5.2-2.1 1-3.5 2.6-4.2Z" fill="#444"/>
                 </svg>
               </a>
