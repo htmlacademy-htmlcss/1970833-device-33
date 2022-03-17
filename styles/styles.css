@@ -1042,6 +1042,10 @@ img {
   background-color: #ffcc33;
 }
 
+.information-button:active::before{
+  display: none;
+}
+
 .information-button-action {
   position: relative;
   width: 280px;
